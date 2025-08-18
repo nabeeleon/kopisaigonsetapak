@@ -1281,34 +1281,42 @@ h1, h2, h3, h4, h5, h6 {
     .hero-image {
         max-width: 100%;
         height: 300px;
+        object-fit: cover;
+        border-radius: 20px;
     }
     
     .hero-buttons {
         justify-content: center;
         gap: 20px;
         margin-top: 30px;
+        flex-direction: column;
+        align-items: center;
     }
     
     .hero-buttons .btn {
         padding: 16px 30px;
         font-size: 1rem;
-        min-width: 140px;
+        min-width: 200px;
         text-align: center;
+        width: 100%;
+        max-width: 280px;
     }
     
     .story-content,
     .contact-content {
         grid-template-columns: 1fr;
-        gap: 60px;
+        gap: 40px;
     }
     
     .story-img {
         height: 300px;
+        object-fit: cover;
+        border-radius: 20px;
     }
     
     .stats,
     .story-stats {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     }
     
@@ -1320,10 +1328,98 @@ h1, h2, h3, h4, h5, h6 {
     .footer-content {
         grid-template-columns: 1fr;
         text-align: center;
+        gap: 30px;
     }
     
     .section-header h2 {
         font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+    
+    .section-header {
+        margin-bottom: 60px;
+    }
+    
+    .section-header p {
+        font-size: 1rem;
+        max-width: 100%;
+        padding: 0 20px;
+    }
+    
+    /* Fix new sections for mobile */
+    .coffee-philosophy,
+    .brand-heritage,
+    .coffee-experience,
+    .faq-section {
+        padding: 60px 20px;
+    }
+    
+    .coffee-philosophy .container,
+    .brand-heritage .container,
+    .coffee-experience .container {
+        padding: 0;
+    }
+    
+    .coffee-philosophy h2,
+    .brand-heritage h2,
+    .coffee-experience h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+    
+    .coffee-philosophy p,
+    .brand-heritage p,
+    .coffee-experience p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+    
+    /* Fix FAQ mobile layout */
+    .faq-item {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .faq-question {
+        font-size: 1.1rem;
+        padding-right: 40px;
+    }
+    
+    .faq-answer {
+        font-size: 0.95rem;
+        padding: 20px 0 0 0;
+    }
+    
+    /* Fix contact form mobile */
+    .contact-form {
+        padding: 30px 20px;
+    }
+    
+    .contact-form input,
+    .contact-form textarea {
+        padding: 15px;
+        font-size: 16px; /* Prevents zoom on iOS */
+    }
+    
+    /* Fix navigation mobile */
+    .navbar {
+        padding: 15px 20px;
+    }
+    
+    .logo {
+        max-width: 120px;
+    }
+    
+    /* Fix liquid effects for mobile */
+    .liquid-coffee-container,
+    .coffee-droplet-system,
+    .elegant-ambient-container {
+        display: none; /* Hide complex animations on mobile for performance */
+    }
+    
+    /* Fix 3D elements for mobile */
+    .floating-bean-3d-ready {
+        display: none; /* Hide 3D elements on mobile */
     }
 }
 
@@ -1334,12 +1430,45 @@ h1, h2, h3, h4, h5, h6 {
     
     .product-card,
     .contact-form {
-        padding: 25px;
+        padding: 20px;
     }
     
     .hero-image,
     .story-img {
         height: 250px;
+    }
+    
+    .hero-title {
+        font-size: 2.2rem;
+    }
+    
+    .section-header h2 {
+        font-size: 2.2rem;
+    }
+    
+    .coffee-philosophy h2,
+    .brand-heritage h2,
+    .coffee-experience h2 {
+        font-size: 2.2rem;
+    }
+    
+    .stats,
+    .story-stats {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .hero-buttons .btn {
+        min-width: 180px;
+        padding: 14px 25px;
+        font-size: 0.95rem;
+    }
+    
+    .coffee-philosophy,
+    .brand-heritage,
+    .coffee-experience,
+    .faq-section {
+        padding: 50px 15px;
     }
 }
 
