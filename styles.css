@@ -1707,22 +1707,10 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ✨ ELEGANT CREATIVE SECTIONS WITH SMOOTH TRANSITIONS */
 
-/* Smooth Section Transitions */
-section {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-section.section-visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
 /* Coffee Philosophy Section */
 .coffee-philosophy {
     padding: 120px 0;
-    background: var(--gradient-minimal);
+    background: var(--background-light);
     position: relative;
     overflow: hidden;
     transition: all 0.6s ease;
@@ -1824,7 +1812,7 @@ section.section-visible {
 /* Brand Heritage Section */
 .brand-heritage {
     padding: 120px 0;
-    background: var(--white);
+    background: var(--main-bg);
     transition: all 0.6s ease;
 }
 
@@ -2007,7 +1995,7 @@ section.section-visible {
     line-height: 1.6;
 }
 
-/* Responsive Design */
+/* Responsive Design for Creative Sections */
 @media (max-width: 768px) {
     .philosophy-content,
     .heritage-content {
@@ -2038,6 +2026,339 @@ section.section-visible {
     .phin-animation {
         width: 100px;
         height: 100px;
+    }
+    
+    .coffee-philosophy,
+    .brand-heritage,
+    .coffee-experience {
+        padding: 80px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .coffee-philosophy,
+    .brand-heritage,
+    .coffee-experience {
+        padding: 60px 0;
+    }
+    
+    .philosophy-text h2,
+    .heritage-text h2 {
+        font-size: 2rem;
+    }
+    
+    .philosophy-text p,
+    .heritage-text p {
+        font-size: 1.1rem;
+    }
+    
+    .coffee-ritual {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .phin-animation {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+/* Smooth Section Transitions - Remove White Separations */
+section {
+    position: relative;
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Remove harsh white separations */
+section:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--border-light), transparent);
+    opacity: 0.3;
+}
+
+/* Smooth background transitions between sections */
+.hero {
+    background: linear-gradient(180deg, var(--main-bg) 0%, var(--background-light) 100%);
+    position: relative;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: linear-gradient(180deg, transparent 0%, var(--background-light) 100%);
+    pointer-events: none;
+}
+
+.products {
+    background: var(--background-light);
+    position: relative;
+}
+
+.products::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: linear-gradient(180deg, var(--background-light) 0%, var(--main-bg) 100%);
+    pointer-events: none;
+}
+
+.products::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: linear-gradient(180deg, var(--main-bg) 0%, var(--background-light) 100%);
+    pointer-events: none;
+}
+
+.story {
+    background: var(--main-bg);
+    position: relative;
+}
+
+.story::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: linear-gradient(180deg, var(--background-light) 0%, var(--main-bg) 100%);
+    pointer-events: none;
+}
+
+.story::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: linear-gradient(180deg, var(--main-bg) 0%, var(--background-light) 100%);
+    pointer-events: none;
+}
+
+.coffee-philosophy {
+    background: var(--background-light);
+    position: relative;
+}
+
+.coffee-philosophy::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: linear-gradient(180deg, var(--main-bg) 0%, var(--background-light) 100%);
+    pointer-events: none;
+}
+
+.coffee-philosophy::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: linear-gradient(180deg, var(--background-light) 0%, var(--main-bg) 100%);
+    pointer-events: none;
+}
+
+.brand-heritage {
+    background: var(--main-bg);
+    position: relative;
+}
+
+.brand-heritage::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: linear-gradient(180deg, var(--background-light) 0%, var(--main-bg) 100%);
+    pointer-events: none;
+}
+
+.brand-heritage::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: linear-gradient(180deg, var(--main-bg) 0%, var(--background-light) 100%);
+    pointer-events: none;
+}
+
+.coffee-experience {
+    background: var(--background-light);
+    position: relative;
+}
+
+.coffee-experience::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: linear-gradient(180deg, var(--main-bg) 0%, var(--background-light) 100%);
+    pointer-events: none;
+}
+
+.coffee-experience::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: linear-gradient(180deg, var(--background-light) 0%, var(--main-bg) 100%);
+    pointer-events: none;
+}
+
+.faq-section {
+    background: var(--main-bg);
+    position: relative;
+}
+
+.faq-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: linear-gradient(180deg, var(--background-light) 0%, var(--main-bg) 100%);
+    pointer-events: none;
+}
+
+.contact {
+    background: var(--background-light);
+    position: relative;
+}
+
+.contact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: linear-gradient(180deg, var(--main-bg) 0%, var(--background-light) 100%);
+    pointer-events: none;
+}
+
+.footer {
+    background: var(--background-dark);
+    position: relative;
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: linear-gradient(180deg, var(--background-light) 0%, var(--background-dark) 100%);
+    pointer-events: none;
+}
+
+/* Enhanced section transitions */
+.section-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.section-hidden {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px; /* Account for fixed navbar */
+}
+
+/* Mobile optimizations for smooth transitions */
+@media (max-width: 768px) {
+    /* Reduce gradient heights on mobile for better performance */
+    .hero::after,
+    .products::before,
+    .products::after,
+    .story::before,
+    .story::after,
+    .coffee-philosophy::before,
+    .coffee-philosophy::after,
+    .brand-heritage::before,
+    .brand-heritage::after,
+    .coffee-experience::before,
+    .coffee-experience::after,
+    .faq-section::before,
+    .contact::before,
+    .footer::before {
+        height: 40px;
+    }
+    
+    /* Ensure smooth mobile scrolling */
+    .section-hidden {
+        transform: translateY(20px);
+    }
+    
+    /* Optimize mobile section padding */
+    section {
+        padding: 60px 20px;
+    }
+    
+    .hero {
+        padding: 80px 20px 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Further reduce gradient heights on small mobile */
+    .hero::after,
+    .products::before,
+    .products::after,
+    .story::before,
+    .story::after,
+    .coffee-philosophy::before,
+    .coffee-philosophy::after,
+    .brand-heritage::before,
+    .brand-heritage::after,
+    .coffee-experience::before,
+    .coffee-experience::after,
+    .faq-section::before,
+    .contact::before,
+    .footer::before {
+        height: 30px;
+    }
+    
+    /* Compact mobile spacing */
+    section {
+        padding: 50px 15px;
+    }
+    
+    .hero {
+        padding: 70px 15px 50px;
     }
 }
 
