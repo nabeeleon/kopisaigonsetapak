@@ -3266,3 +3266,64 @@ a[href^="http"] {
     transform-style: flat;
     perspective: none;
 }
+
+/* AGGRESSIVE FIX: Ensure location section buttons are clickable */
+.contact .hero-buttons {
+    position: relative;
+    z-index: 9999 !important;
+    pointer-events: auto !important;
+    /* Completely disable 3D effects */
+    transform-style: flat !important;
+    perspective: none !important;
+    /* Force buttons to be on top */
+    transform: none !important;
+}
+
+.contact .hero-buttons .btn {
+    position: relative;
+    z-index: 10000 !important;
+    pointer-events: auto !important;
+    cursor: pointer !important;
+    /* Completely disable 3D effects */
+    transform-style: flat !important;
+    perspective: none !important;
+    /* Force buttons to be completely flat */
+    transform: none !important;
+    /* Ensure buttons are clickable */
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+/* Ensure buttons are not covered by other elements */
+.contact .hero-buttons .btn:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 25px rgba(74, 44, 42, 0.2);
+}
+
+/* Make sure external links work */
+a[href^="http"] {
+    pointer-events: auto !important;
+    cursor: pointer !important;
+    /* Completely disable 3D effects */
+    transform-style: flat !important;
+    perspective: none !important;
+}
+
+/* Completely disable 3D effects for the entire contact section */
+.contact {
+    transform-style: flat !important;
+    perspective: none !important;
+    transform: none !important;
+}
+
+/* Force all buttons in contact section to work */
+.contact a[href*="maps.app.goo.gl"],
+.contact a[href*="instagram.com"] {
+    pointer-events: auto !important;
+    cursor: pointer !important;
+    z-index: 10000 !important;
+    position: relative;
+    transform: none !important;
+}

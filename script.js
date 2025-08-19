@@ -52,14 +52,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
         if (target) {
-            // Remove 3D perspective bending that interferes with buttons
-            // document.body.style.perspective = '1000px'; // DISABLED - causes button issues
+            // Completely remove 3D effects that cause button issues
             target.scrollIntoView({
                 behavior: 'smooth',
                 block: 'start'
             });
             
-            // Simplified effect without 3D bending
+            // Simple scale effect without 3D
             setTimeout(() => {
                 target.style.transform = 'scale(1.02)';
                 setTimeout(() => {
@@ -68,6 +67,31 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             }, 500);
         }
     });
+});
+
+// SPECIFIC FIX: Ensure location section buttons work
+document.addEventListener('DOMContentLoaded', function() {
+    // Get Directions button
+    const getDirectionsBtn = document.querySelector('a[href*="maps.app.goo.gl"]');
+    if (getDirectionsBtn) {
+        getDirectionsBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            e.preventDefault();
+            window.open(this.href, '_blank');
+            console.log('Get Directions clicked!');
+        });
+    }
+    
+    // Follow Us button
+    const followUsBtn = document.querySelector('a[href*="instagram.com"]');
+    if (followUsBtn) {
+        followUsBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            e.preventDefault();
+            window.open(this.href, '_blank');
+            console.log('Follow Us clicked!');
+        });
+    }
 });
 
 // Ensure external links work properly
