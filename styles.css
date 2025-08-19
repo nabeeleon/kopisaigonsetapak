@@ -3223,3 +3223,29 @@ html {
         padding: 0 15px;
     }
 }
+
+/* Ensure location section buttons are clickable */
+.contact .hero-buttons {
+    position: relative;
+    z-index: 10;
+    pointer-events: auto;
+}
+
+.contact .hero-buttons .btn {
+    position: relative;
+    z-index: 11;
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+/* Ensure buttons are not covered by other elements */
+.contact .hero-buttons .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(74, 44, 42, 0.2);
+}
+
+/* Make sure external links work */
+a[href^="http"] {
+    pointer-events: auto;
+    cursor: pointer;
+}

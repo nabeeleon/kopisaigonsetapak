@@ -46,7 +46,7 @@ window.addEventListener('scroll', () => {
     });
 });
 
-// MIND-BLOWING Smooth scrolling with 3D perspective
+// MIND-BLOWING Smooth scrolling with 3D perspective - ONLY for internal links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -67,6 +67,14 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 }, 500);
             }, 1000);
         }
+    });
+});
+
+// Ensure external links work properly
+document.querySelectorAll('a[href^="http"]').forEach(link => {
+    link.addEventListener('click', function(e) {
+        // Allow external links to work normally
+        console.log('External link clicked:', this.href);
     });
 });
 
