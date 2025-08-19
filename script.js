@@ -52,20 +52,20 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
         if (target) {
-            // Add mind-blowing scroll effect
-            document.body.style.perspective = '1000px';
+            // Remove 3D perspective bending that interferes with buttons
+            // document.body.style.perspective = '1000px'; // DISABLED - causes button issues
             target.scrollIntoView({
                 behavior: 'smooth',
                 block: 'start'
             });
             
-            // Add 3D rotation effect during scroll
+            // Simplified effect without 3D bending
             setTimeout(() => {
-                target.style.transform = 'rotateY(5deg)';
+                target.style.transform = 'scale(1.02)';
                 setTimeout(() => {
-                    target.style.transform = 'rotateY(0deg)';
-                }, 500);
-            }, 1000);
+                    target.style.transform = 'scale(1)';
+                }, 300);
+            }, 500);
         }
     });
 });

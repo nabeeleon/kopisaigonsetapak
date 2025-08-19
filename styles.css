@@ -3229,6 +3229,9 @@ html {
     position: relative;
     z-index: 10;
     pointer-events: auto;
+    /* Disable any 3D effects that might interfere */
+    transform-style: flat;
+    perspective: none;
 }
 
 .contact .hero-buttons .btn {
@@ -3236,11 +3239,16 @@ html {
     z-index: 11;
     pointer-events: auto;
     cursor: pointer;
+    /* Ensure buttons are completely flat and clickable */
+    transform-style: flat;
+    perspective: none;
+    /* Force buttons to be on top */
+    transform: translateZ(0);
 }
 
 /* Ensure buttons are not covered by other elements */
 .contact .hero-buttons .btn:hover {
-    transform: translateY(-2px);
+    transform: translateY(-2px) translateZ(0);
     box-shadow: 0 8px 25px rgba(74, 44, 42, 0.2);
 }
 
@@ -3248,4 +3256,13 @@ html {
 a[href^="http"] {
     pointer-events: auto;
     cursor: pointer;
+    /* Disable any 3D effects */
+    transform-style: flat;
+    perspective: none;
+}
+
+/* Disable 3D effects for the entire contact section */
+.contact {
+    transform-style: flat;
+    perspective: none;
 }
