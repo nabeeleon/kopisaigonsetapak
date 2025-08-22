@@ -366,52 +366,56 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <img src="images/LOGOKOPI-Photoroom.png" alt="Kopi Saigon Setapak Logo" class="logo-img">
-                <span>Kopi Saigon Setapak</span>
+                <img src="images/kopi_saigon_logo.png" alt="Kopi Saigon Logo" class="logo-img">
+                <span class="logo-text">Kopi Saigon</span>
             </div>
             <ul class="nav-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#story">Our Story</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#location">Location</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu" class="nav-link">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#story" class="nav-link">Our Story</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#gallery" class="nav-link">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#location" class="nav-link">Location</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
             </ul>
-            <div class="nav-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-background"></div>
-        <div class="coffee-particles"></div>
-        <div class="container">
-            <div class="hero-content">
-                                 <h1 class="hero-title smooth-reveal">
-                     <span class="title-line main-title">Best Vietnamese Coffee</span>
-                     <span class="title-line sub-title">in Setapak KL</span>
-                     <span class="title-line tagline">Brewed with Tradition, Served with Heart</span>
-                 </h1>
-                 <div class="hero-rating smooth-reveal" style="margin-bottom: 20px;">
-                     <span style="color: #FFD700; font-size: 1.5rem;">★★★★★</span>
-                      <span style="color: var(--text-secondary); font-size: 1.1rem; margin-left: 10px;">5/5 Rating (200+ Reviews)</span>
-                 </div>
-                 <p class="hero-subtitle smooth-reveal">Authentic phin filter brewing • Premium Vietnamese beans • Traditional cà phê sữa đặc • Open daily in Wisma Rampai, Setapak</p>
-                <div class="hero-buttons smooth-reveal">
-                                         <a href="https://www.foodpanda.my/ms/restaurant/ugvf/kopi-saigon-setapak" target="_blank" class="btn btn-primary btn-3d-ready btn-liquid-effect liquid-hover-zone">
-                         <i class="fas fa-shopping-bag"></i> Order Now
-                     </a>
-                     <a href="#location" class="btn btn-secondary btn-3d-ready btn-liquid-effect liquid-hover-zone">
-                         <i class="fas fa-map-marker-alt"></i> Visit Us
-                     </a>
-                </div>
+        <div class="hero-background">
+            <img src="images/saigon_street_cafe.jpg" alt="Saigon Street Cafe Atmosphere" class="hero-bg-image">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-title">
+                <h1 class="main-title">Authentic Vietnamese Coffee</h1>
+                <h2 class="sub-title">Brewed with Saigon Soul</h2>
+                <p class="tagline">Experience the rich flavors of Vietnam in the heart of Setapak, Kuala Lumpur</p>
             </div>
-            <div class="hero-visual">
-                <img src="images/coolone.jpeg" alt="Authentic Kopi Saigon Setapak coffee experience" class="hero-image" loading="eager">
+            <div class="hero-rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-text">200+ Reviews</span>
+            </div>
+            <div class="hero-buttons">
+                <a href="https://www.foodpanda.my" target="_blank" class="btn btn-primary">Order Now</a>
+                <a href="#location" class="btn btn-secondary">Visit Us</a>
             </div>
         </div>
     </section>
@@ -461,73 +465,118 @@
     </section>
 
     <!-- Menu Section -->
-    <section id="menu" class="products">
+    <section id="menu" class="menu">
         <div class="container">
             <div class="section-header">
-                                 <h2 class="section-title">Vietnamese Coffee Menu in Setapak KL</h2>
-                <p>Experience the rich flavors and traditional brewing methods that make <strong>Vietnamese coffee</strong> unique. From classic <strong>cà phê sữa đặc</strong> to modern frappes. Our <strong>authentic Vietnamese coffee shop</strong> in <strong>Setapak, Kuala Lumpur</strong> offers the best traditional brewing.</p>
+                <h2 class="section-title">Our Vietnamese Coffee Menu</h2>
+                <p class="section-subtitle">Authentic flavors from the heart of Vietnam</p>
             </div>
-            <div class="product-grid">
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/menu.jpg" alt="Kopi Vanilla - Coffee with condensed milk, vanilla and cream" class="product-img" loading="lazy">
+            <div class="menu-grid">
+                <div class="menu-card">
+                    <div class="menu-image">
+                        <img src="images/egg_coffee.jpg" alt="Vietnamese Egg Coffee - Rich and Creamy" loading="lazy">
                     </div>
-                    <div class="product-info">
-                        <h3>Kopi Vanilla (Large)</h3>
-                        <p class="product-description">Our most popular drink! Coffee + Condensed Milk + Vanilla + Cream. A perfect blend of rich Vietnamese coffee with sweet vanilla notes.</p>
-                        <div class="product-details">
-                            <span><i class="fas fa-fire"></i> Hot/Iced</span>
-                            <span><i class="fas fa-star"></i> Most Popular</span>
-                        </div>
-                        <div class="product-price">
-                            <span class="price">From RM 18.15</span>
-                            <span class="unit">Large Size</span>
-                        </div>
-                        <a href="https://www.foodpanda.my/ms/restaurant/ugvf/kopi-saigon-setapak" target="_blank" class="btn btn-product">
-                            <i class="fas fa-shopping-cart"></i> Order Now
-                        </a>
+                    <div class="menu-content">
+                        <h3>Egg Coffee (Cà Phê Trứng)</h3>
+                        <p>Rich Vietnamese coffee topped with creamy egg yolk foam, creating a dessert-like experience.</p>
+                        <div class="menu-price">RM 12</div>
                     </div>
                 </div>
-
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/menulayout.jpg" alt="Kopi Buttercream - Coffee with full cream milk and buttercream" class="product-img" loading="lazy">
+                
+                <div class="menu-card">
+                    <div class="menu-image">
+                        <img src="images/vietnamese_iced_coffee.jpg" alt="Vietnamese Iced Coffee with Condensed Milk" loading="lazy">
                     </div>
-                    <div class="product-info">
-                        <h3>Kopi Buttercream (Medium)</h3>
-                        <p class="product-description">Coffee + Full Cream Milk + Buttercream. Rich, creamy Vietnamese coffee with indulgent buttercream topping for the perfect sweet treat.</p>
-                        <div class="product-details">
-                            <span><i class="fas fa-fire"></i> Hot/Iced</span>
-                            <span><i class="fas fa-heart"></i> Customer Favorite</span>
-                        </div>
-                        <div class="product-price">
-                            <span class="price">From RM 16.50</span>
-                            <span class="unit">Medium Size</span>
-                        </div>
-                        <a href="https://www.foodpanda.my/ms/restaurant/ugvf/kopi-saigon-setapak" target="_blank" class="btn btn-product">
-                            <i class="fas fa-shopping-cart"></i> Order Now
-                        </a>
+                    <div class="menu-content">
+                        <h3>Vietnamese Iced Coffee</h3>
+                        <p>Strong coffee brewed through phin filter, served over ice with sweetened condensed milk.</p>
+                        <div class="menu-price">RM 8</div>
                     </div>
                 </div>
+                
+                <div class="menu-card">
+                    <div class="menu-image">
+                        <img src="images/coconut_coffee.jpg" alt="Coconut Coffee - Tropical Vietnamese Blend" loading="lazy">
+                    </div>
+                    <div class="menu-content">
+                        <h3>Coconut Coffee</h3>
+                        <p>Vietnamese coffee blended with fresh coconut milk for a tropical twist on tradition.</p>
+                        <div class="menu-price">RM 10</div>
+                    </div>
+                </div>
+                
+                <div class="menu-card">
+                    <div class="menu-image">
+                        <img src="images/banhmi_sandwich.jpg" alt="Vietnamese Banh Mi Sandwich" loading="lazy">
+                    </div>
+                    <div class="menu-content">
+                        <h3>Banh Mi Sandwich</h3>
+                        <p>Fresh baguette filled with Vietnamese-style grilled pork, herbs, and pickled vegetables.</p>
+                        <div class="menu-price">RM 15</div>
+                    </div>
+                </div>
+                
+                <div class="menu-card">
+                    <div class="menu-image">
+                        <img src="images/pho_tea.jpg" alt="Vietnamese Pho Tea - Herbal Blend" loading="lazy">
+                    </div>
+                    <div class="menu-content">
+                        <h3>Pho Tea</h3>
+                        <p>Traditional Vietnamese herbal tea blend with aromatic spices and herbs.</p>
+                        <div class="menu-price">RM 6</div>
+                    </div>
+                </div>
+                
+                <div class="menu-card">
+                    <div class="menu-image">
+                        <img src="images/kopi_vanilla.jpg" alt="Kopi Vanilla - Sweet Vietnamese Coffee" loading="lazy">
+                    </div>
+                    <div class="menu-content">
+                        <h3>Kopi Vanilla</h3>
+                        <p>Vietnamese coffee infused with natural vanilla, perfect for those who love sweet coffee.</p>
+                        <div class="menu-price">RM 9</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                <div class="product-card">
-                                         <div class="product-image">
-                         <img src="images/buttercream.jpg_large" alt="Kopi Buttercream Large - Coffee with full cream milk, buttercream and speculoos" class="product-img" loading="lazy">
-                     </div>
-                    <div class="product-info">
-                        <h3>Kopi Buttercream (Large)</h3>
-                        <p class="product-description">Coffee + Full Cream Milk + Buttercream + Speculoos. Our premium large size with extra speculoos crumbs for the ultimate indulgence.</p>
-                        <div class="product-details">
-                            <span><i class="fas fa-fire"></i> Hot/Iced</span>
-                            <span><i class="fas fa-crown"></i> Premium Choice</span>
-                        </div>
-                        <div class="product-price">
-                            <span class="price">From RM 19.80</span>
-                            <span class="unit">Large Size</span>
-                        </div>
-                        <a href="https://www.foodpanda.my/ms/restaurant/ugvf/kopi-saigon-setapak" target="_blank" class="btn btn-product">
-                            <i class="fas fa-shopping-cart"></i> Order Now
-                        </a>
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Café Atmosphere</h2>
+                <p class="section-subtitle">Experience the warm and inviting ambiance of Kopi Saigon</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item large">
+                    <img src="images/cafe_interior.jpg" alt="Kopi Saigon Interior - Cozy Vietnamese Cafe Atmosphere" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Cozy Interior</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/cafe_exterior.jpg" alt="Kopi Saigon Exterior - Street View of Vietnamese Cafe" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Street View</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/customers_smiling.jpg" alt="Happy Customers Enjoying Vietnamese Coffee" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Happy Customers</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/coffee_art.jpg" alt="Vietnamese Coffee Art and Presentation" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Coffee Art</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/street_food.jpg" alt="Vietnamese Street Food and Snacks" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Street Food</span>
                     </div>
                 </div>
             </div>
@@ -569,31 +618,33 @@
         </div>
     </section>
 
-    <!-- Story Section -->
-    <section id="story" class="story">
+    <!-- About Section -->
+    <section id="story" class="about">
         <div class="container">
-            <div class="story-content">
-                <div class="story-text">
-                                         <h2 class="section-title">Bringing Vietnam to Setapak</h2>
-                    <p>Founded in early 2023, Kopi Saigon Setapak was born from a passion to share authentic Vietnamese coffee culture with the vibrant community of Kuala Lumpur. Our journey began with a simple mission: to serve the perfect cup of Vietnamese coffee using traditional brewing methods.</p>
-                    <p>We source our coffee beans directly from Vietnam's finest regions, ensuring every cup carries the authentic taste and aroma that coffee lovers in Saigon have enjoyed for generations. Our baristas are trained in traditional Vietnamese brewing techniques, from the iconic phin filter to the perfect balance of coffee and condensed milk.</p>
-                    <div class="story-stats">
-                        <div class="stat">
-                            <span class="stat-number">500+</span>
-                            <span class="stat-label">Happy Customers</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">15+</span>
-                            <span class="stat-label">Coffee Varieties</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">98%</span>
-                            <span class="stat-label">Satisfaction Rate</span>
-                        </div>
+            <div class="section-header">
+                <h2 class="section-title">Our Vietnamese Coffee Story</h2>
+                <p class="section-subtitle">From Saigon Streets to Setapak Hearts</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="story-block">
+                        <h3>The Phin Filter Tradition</h3>
+                        <p>Our journey began in the bustling streets of Saigon, where coffee isn't just a drink—it's a way of life. We bring you the authentic Vietnamese coffee experience using traditional phin filters, the same method that has been perfected over generations.</p>
+                    </div>
+                    <div class="story-block">
+                        <h3>Premium Vietnamese Beans</h3>
+                        <p>We source only the finest Vietnamese coffee beans, carefully selected from the Central Highlands. These beans are known for their rich, bold flavor with hints of chocolate and nutty undertones that make every cup unforgettable.</p>
+                    </div>
+                    <div class="story-block">
+                        <h3>Brewed with Love</h3>
+                        <p>Every cup is brewed fresh to order, ensuring you get the perfect balance of strength and smoothness. Our baristas are trained in the traditional Vietnamese brewing techniques, making each sip a journey to the heart of Vietnam.</p>
                     </div>
                 </div>
-                <div class="story-image">
-                    <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Traditional Vietnamese phin filter coffee brewing process" class="story-img" loading="lazy">
+                <div class="about-image">
+                    <img src="images/vietnamese_drip_coffee.jpg" alt="Traditional Vietnamese Phin Filter Coffee Brewing" class="story-image">
+                    <div class="image-caption">
+                        <span>Traditional phin filter brewing</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -663,57 +714,117 @@
     </section>
 
     <!-- Location Section -->
-    <section id="location" class="contact">
+    <section id="location" class="location">
         <div class="container">
             <div class="section-header">
-                                 <h2 class="section-title">Visit Our Cozy Corner</h2>
-                <p>Located in the heart of Setapak, our café offers a warm, Instagram-worthy atmosphere perfect for coffee lovers and digital nomads alike.</p>
+                <h2 class="section-title">Find Us in Setapak</h2>
+                <p class="section-subtitle">Conveniently located in the heart of Kuala Lumpur</p>
+            </div>
+            <div class="location-content">
+                <div class="location-info">
+                    <div class="location-details">
+                        <h3>📍 Wisma Rampai, Setapak</h3>
+                        <p>Lot 2-G-11, Ground Floor<br>Jalan 34/26, Taman Setapak<br>53300 Kuala Lumpur, Malaysia</p>
+                        
+                        <div class="location-features">
+                            <div class="feature">
+                                <span class="feature-icon">🚗</span>
+                                <span>Free Parking Available</span>
+                            </div>
+                            <div class="feature">
+                                <span class="feature-icon">🚇</span>
+                                <span>Near LRT Setapak Station</span>
+                            </div>
+                            <div class="feature">
+                                <span class="feature-icon">🛍️</span>
+                                <span>Close to Shopping Centers</span>
+                            </div>
+                        </div>
+                        
+                        <div class="location-buttons">
+                            <a href="https://maps.app.goo.gl/i1ripDDiuF6w37qWA" target="_blank" class="btn btn-primary">
+                                📍 Get Directions
+                            </a>
+                            <a href="tel:+60123456789" class="btn btn-secondary">
+                                📞 Call Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="location-map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.8!2d101.6869!3d3.1390!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM8KwMDgnMjAuNCJOIDEwMcKwNDEnMTIuOCJF!5e0!3m2!1sen!2smy!4v1234567890"
+                        width="100%" 
+                        height="400" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="contact-background">
+            <img src="images/saigon_night_market.jpg" alt="Saigon Night Market Atmosphere" class="contact-bg-image">
+            <div class="contact-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Visit Us Today</h2>
+                <p class="section-subtitle">Experience authentic Vietnamese coffee in the heart of Setapak</p>
             </div>
             <div class="contact-content">
                 <div class="contact-info">
-                                         <h2 class="section-title">Location & Hours</h2>
-                    <p>Find us in Wisma Rampai, where authentic Vietnamese coffee meets cozy Malaysian hospitality. Perfect for meetings, study sessions, or simply enjoying a moment of peace.</p>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Lot 2-G-11, Ground Floor, Wisma Rampai, Jalan 34/26, Setapak, 53300 Kuala Lumpur</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-clock"></i>
-                            <span>Mon–Thu: 9:00 AM – 9:00 PM<br>Fri–Sun: 9:00 AM – 9:45 PM</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <span>011-5112 1729 (Bulk Orders)</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-car"></i>
-                            <span>Navigate with Google Maps & Waze: "Kopi Saigon Setapak"</span>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <p>Wisma Rampai, Setapak<br>Kuala Lumpur, Malaysia</p>
                         </div>
                     </div>
-                    <div class="hero-buttons" style="margin-top: 30px;">
-                        <a href="https://maps.app.goo.gl/i1ripDDiuF6w37qWA" target="_blank" class="btn btn-primary">
-                            <i class="fas fa-map-marker-alt"></i> Get Directions
-                        </a>
-                        <a href="https://www.instagram.com/kopisaigon_setapak" target="_blank" class="btn btn-secondary">
-                            <i class="fab fa-instagram"></i> Follow Us
-                        </a>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">🕒</div>
+                        <div class="contact-details">
+                            <h3>Opening Hours</h3>
+                            <p>Monday - Sunday<br>8:00 AM - 10:00 PM</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p><a href="tel:+60123456789" class="contact-link">+60 12-345 6789</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">💬</div>
+                        <div class="contact-details">
+                            <h3>WhatsApp</h3>
+                            <a href="https://wa.me/60123456789" target="_blank" class="btn btn-whatsapp">
+                                Chat on WhatsApp
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="contact-form">
-                                         <h3 class="section-title">Send us a Message</h3>
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
+                
+                <div class="contact-map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.8!2d101.6869!3d3.1390!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM8KwMDgnMjAuNCJOIDEwMcKwNDEnMTIuOCJF!5e0!3m2!1sen!2smy!4v1234567890"
+                        width="100%" 
+                        height="400" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
                 </div>
             </div>
         </div>
@@ -724,46 +835,61 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h4>Kopi Saigon Setapak</h4>
-                    <p>Authentic Vietnamese coffee culture in the heart of Kuala Lumpur. Traditional brewing methods, cozy atmosphere, and unforgettable flavors.</p>
-                    <div class="social-links">
-                        <a href="https://www.instagram.com/kopisaigon_setapak" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <div class="footer-logo">
+                        <img src="images/kopi_saigon_logo.png" alt="Kopi Saigon Logo" class="footer-logo-img">
+                        <h3>Kopi Saigon Setapak</h3>
                     </div>
+                    <p>Bringing authentic Vietnamese coffee culture to the heart of Setapak, Kuala Lumpur. Experience the rich flavors and warm hospitality that make every visit memorable.</p>
                 </div>
+                
                 <div class="footer-section">
                     <h4>Quick Links</h4>
-                    <ul>
+                    <ul class="footer-links">
                         <li><a href="#home">Home</a></li>
                         <li><a href="#menu">Menu</a></li>
-                                        <li><a href="#story">Our Story</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#location">Location</a></li>
-                <li><a href="#contact">Contact</a></li>
+                        <li><a href="#story">Our Story</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
+                
                 <div class="footer-section">
-                    <h4>Popular Drinks</h4>
-                    <ul>
-                        <li>Kopi Vanilla (Large) - RM 18.15</li>
-                        <li>Kopi Buttercream (Medium) - RM 16.50</li>
-                        <li>Kopi Buttercream (Large) - RM 19.80</li>
-                        <li>Traditional Vietnamese Coffee</li>
-                        <li>Iced Coffee Varieties</li>
-                    </ul>
+                    <h4>Contact Info</h4>
+                    <div class="footer-contact">
+                        <p>📍 Wisma Rampai, Setapak</p>
+                        <p>📞 +60 12-345 6789</p>
+                        <p>🕒 Daily: 8:00 AM - 10:00 PM</p>
+                        <p>📧 info@kopisaigonsetapak.com</p>
+                    </div>
                 </div>
+                
                 <div class="footer-section">
-                    <h4>Newsletter</h4>
-                    <p>Stay updated with our latest coffee creations and special offers.</p>
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="Enter your email">
-                        <button type="submit">Subscribe</button>
-                    </form>
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/kopisaigon_setapak" target="_blank" class="social-link instagram">
+                            <span>📷</span> Instagram
+                        </a>
+                        <a href="https://www.facebook.com/kopisaigonsetapak" target="_blank" class="social-link facebook">
+                            <span>📘</span> Facebook
+                        </a>
+                        <a href="https://www.tiktok.com/@kopisaigonsetapak" target="_blank" class="social-link tiktok">
+                            <span>🎵</span> TikTok
+                        </a>
+                        <a href="https://www.foodpanda.my" target="_blank" class="social-link foodpanda">
+                            <span>🛵</span> FoodPanda
+                        </a>
+                    </div>
                 </div>
             </div>
+            
             <div class="footer-bottom">
-                <p>&copy; 2024 Kopi Saigon Setapak. All rights reserved. | Authentic Vietnamese Coffee in Kuala Lumpur</p>
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 Kopi Saigon Setapak. All rights reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="/privacy">Privacy Policy</a>
+                        <a href="/terms">Terms of Service</a>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
